@@ -44,10 +44,11 @@
 Um site retorna informações sobre as classificações dos times, de acordo com os filtros, dinamicamente com as alterações e inclusões de novas partidas pelos usuários administradores. Ao acessar o endereço sem o login, a tela inicial apresentada será o quadro de _Classificação_ de partidas. Ao logar com usuário e senha valído, o mesmo será automaticamente direcionado à tela de _Partidas_.
 
 Esse projeto é composto de 4 seções principais:
-Seção 1: Users e Login
-Seção 2: Times
-Seção 3: Partidas
-Seção 4: Leaderboards (placares)
+
+Seção 1: Users e Login<br>
+Seção 2: Times<br>
+Seção 3: Partidas<br>
+Seção 4: Leaderboards (placares)<br>
 
 <details>
   <summary><strong> Regras de negócios: </strong></summary>
@@ -79,20 +80,20 @@ Seção 4: Leaderboards (placares)
 
   **Ordem para desempate**
 
-  1º Total de Vitórias;
-  2º Saldo de gols;
-  3º Gols a favor;
+  1º Total de Vitórias;<br>
+  2º Saldo de gols;<br>
+  3º Gols a favor;<br>
   4º Gols sofridos.
   
 </details>
 
 ## Descrição
 
-1 - (`TDD`) Teste de cobertura dos arquivos back-end (atualmente em 75%).
-2 - Carregamento inicial do DB com informações prévias dos usuários, times e jogos, utilizando sequelize.
-3 - O endpoint `/login` permite o acesso do usuário apenas com dados válidos no front-end, de acordo com as regras de negócio.
-4 - Os endpoints `/teams` e `/teams/:id` _no back-end_ retornam os times corretamente (para futuras implementações de funcionalidades como lista de times e detalhes de times no front-end)
-5 - O endpoint `/matches` mostra corretamente na tela de partidas no front-end, onde também é possível filtrar as partidadas em andamento e finalizadas.
-6 - Através do endpoint `/matches` o usuário com perfil de administrador poderá salvar uma partida com _Status_ `Em andamento`.
-7 - Ao acessar o endpoint `/matches/:id`, o usuário com perfil de administrador poderá alterar o _Status_ `Em andamento` para `Finalizado`.
-8 - O endpoint `/leaderboard` mostra no front-end a classificação geral dos times no campeonato, e também é possível filtrar as classificações dos times `da casa` e as classificações dos times quando visitantes.
+1. (`TDD`) Teste de cobertura dos arquivos back-end (atualmente em 75%).
+2. Carregamento inicial do DB com informações prévias dos usuários, times e jogos, utilizando sequelize.
+3. O endpoint `/login` permite o acesso do usuário apenas com dados válidos no front-end, de acordo com as regras de negócio.
+4. Os endpoints `/teams` e `/teams/:id` _no back-end_ retornam os times corretamente (para futuras implementações de funcionalidades como lista de times e detalhes de times no front-end).
+5. O endpoint `/matches` mostra corretamente na tela de partidas no front-end, onde também é possível filtrar as partidadas em andamento e finalizadas.
+6. Através do endpoint `/matches` o usuário com perfil de administrador poderá salvar uma partida com _Status_ `Em andamento`.
+7. Ao acessar o endpoint `/matches/:id`, o usuário com perfil de administrador poderá alterar o _Status_ `Em andamento` para `Finalizado`.
+8. O endpoint `/leaderboard` mostra no front-end a classificação geral dos times no campeonato, e também é possível filtrar as classificações dos times `da casa` e as classificações dos times quando visitantes.
