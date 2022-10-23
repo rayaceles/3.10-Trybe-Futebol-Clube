@@ -96,4 +96,4 @@ Seção 4: Leaderboards (placares)<br>
 5. O endpoint `/matches` mostra corretamente na tela de partidas no front-end, onde também é possível filtrar as partidadas em andamento e finalizadas.
 6. Através do endpoint `/matches` o usuário com perfil de administrador poderá salvar uma partida com _Status_ `Em andamento`.
 7. Ao acessar o endpoint `/matches/:id`, o usuário com perfil de administrador poderá alterar o _Status_ `Em andamento` para `Finalizado`.
-8. O endpoint `/leaderboard` mostra no front-end a classificação geral dos times no campeonato, e também é possível filtrar as classificações dos times `da casa` e as classificações dos times quando visitantes.
+8. O endpoint `/leaderboard` mostra no front-end a classificação geral dos times no campeonato, e também é possível filtrar as classificações dos times `da casa` e as classificações dos times quando `visitantes`.
