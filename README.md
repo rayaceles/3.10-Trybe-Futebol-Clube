@@ -37,7 +37,7 @@
 
 * Utilizadas _Variáveis de Ambiente_ para controlar as portas das APIs.
 * Utilizado _Docker_ para garantir a integridade dos versionamentos.
-* Utilizado _Heroku_ para realizar o Deploy.
+* Utilizado _Typescript_ na criação da API.
 
 ## Sobre
 
